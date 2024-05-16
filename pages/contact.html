@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato - Oak Charger</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/css/styles_contact.css">
+</head>
+<body>
+    <header class="bg-dark text-white py-3">
+        <nav class="container">
+            <ul class="nav justify-content-center">
+                <li class="nav-item"><a class="nav-link text-white" href="/">Inicial</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="#">Fotovoltaico</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="#">Baterias</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="#">Safe OakCharger</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="#">Loja</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="#">Contactos</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="container my-5">
+        <div class="row">
+            <div class="col-lg-8 mb-4">
+                <h1>Esperamos seu contato...</h1>
+                <p>Deixe-nos sua mensagem e retornaremos o mais breve possível.</p>
+                <form id="contact-form">
+                    <div class="form-group">
+                        <label for="nome">Nome*</label>
+                        <input type="text" class="form-control" id="nome" name="nome" placeholder="Digite seu primeiro nome" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="apelido">Apelido*</label>
+                        <input type="text" class="form-control" id="apelido" name="apelido" placeholder="Digite seu último nome" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Seu E-mail*</label>
+                        <input type="email" class="form-control" id="email" name="email" placeholder="Digite seu e-mail" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="mensagem">Mensagem*</label>
+                        <textarea class="form-control" id="mensagem" name="mensagem" placeholder="Digite sua mensagem" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-dark">ENVIAR</button>
+                </form>
+            </div>
+            <div class="col-lg-4">
+                <div class="map mb-4">
+                    <iframe class="w-100" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3164.6666554044567!2d-7.264837684588911!3d40.5419789793525!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd3cb2c74378e8b9%3A0x390e3cd82db8af1e!2sR.%20Alm.%20Gago%20Coutinho%202C%2C%206300-507%20Guarda%2C%20Portugal!5e0!3m2!1sen!2sus!4v1622324508235!5m2!1sen!2sus" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+                <h2>Siga-nos nas redes sociais</h2>
+                <div class="d-flex justify-content-center">
+                    <a href="#" class="mr-3"><img src="facebook-icon.png" alt="Facebook" width="30" height="30"></a>
+                    <a href="#" class="mr-3"><img src="instagram-icon.png" alt="Instagram" width="30" height="30"></a>
+                    <a href="#"><img src="linkedin-icon.png" alt="LinkedIn" width="30" height="30"></a>
+                </div>
+                <p class="text-center">@oak_charger</p>
+                <div class="text-center">
+                    <img src="zaask-icon.png" alt="Zaask" width="50" height="50">
+                    <p>Profissional Ouro</p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="bg-dark text-white py-3">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-md-4 mb-3">
+                    <p><strong>Morada</strong></p>
+                    <p>R. Almirante Gago Coutinho, 2C<br>6300-507 Guarda - Guarda - Portugal</p>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <p><strong>Contactos</strong></p>
+                    <p><a class="text-white" href="mailto:comercial@oakcharger.com">comercial@oakcharger.com</a><br>+351 910 649 520</p>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <p><strong>Horários</strong></p>
+                    <p>Segunda à Sexta-feira<br>9h às 17h</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="/js/scripts_contact.js"></script>
+</body>
+</html>

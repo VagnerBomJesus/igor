@@ -1,233 +1,138 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <title>Custom Image Carousel</title>
-    <!-- Swiper CSS -->
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
-    <style>
-      #carousel {
-        width: 100%;
-        max-width: 1425px;
-        height: 70vh; /* 70% of the viewport height */
-        margin: auto;
-        overflow: hidden;
-        position: relative;
-        font-family: Arial, sans-serif;
-        background-color: #73a6ad; /* Corresponding background */
-      }
-
-      .swiper-wrapper {
-        display: flex;
-        height: 100%; /* Ensure ul takes full height of the carousel */
-      }
-
-      .swiper-slide {
-        width: 100%;
-        height: 100%; /* Ensure li takes full height of the carousel */
-        position: relative;
-      }
-
-      #carousel img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover; /* Maintain aspect ratio, cover the container */
-        display: block;
-      }
-
-      .HeadingSlider__content {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: flex-start; /* Align items to the start (left) */
-        position: absolute;
-        top: 50%;
-        left: 90px;
-        transform: translateY(-50%);
-        background-color: rgba(0, 0, 0, 0.09);
-        color: #fff;
-        padding: 20px;
-        border-radius: 10px;
-      }
-
-      .mainHeadingSlider__title {
-        max-width: 618px;
-        margin-bottom: 8px;
-        font-size: 24px;
-        margin: 0;
-      }
-
-      .mainHeadingSlider__description {
-        font-size: 16px;
-        max-width: 547px;
-        margin: 10px 0;
-      }
-
-      .mainHeadingSlider__button {
-        display: inline-block; /* Ensure the button keeps its intrinsic size */
-        padding: 10px 20px;
-        background-color: #28ff52;
-        color: #000;
-        text-decoration: none;
-        border-radius: 5px;
-        font-size: 14px;
-        margin-top: 10px; /* Add some space above the button */
-        width: auto; /* Ensure the button does not stretch */
-      }
-
-      #carousel .carousel-controls {
-        position: absolute;
-        bottom: 40px;
-        right: 58px;
-        display: flex;
-        align-items: center;
-        z-index: 10;
-      }
-
-      #carousel .carousel-control {
-        display: inline-block;
-        cursor: pointer;
-        font-size: 45px;
-        color: #ffffff;
-        padding: 0px;
-        margin: 0 1px; /* Space between controls and indicators */
-      }
-
-      #carousel .carousel-indicators {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        z-index: 10;
-      }
-
-      #carousel .dot {
-        display: inline-block;
-        width: 8px;
-        height: 8px;
-        border: 2px solid currentColor;
-        background-color: transparent;
-        border-radius: 100%;
-        opacity: 1;
-        margin: 0 8px;
-        transition: width 0.25s ease;
-        color: #ffffff;
-        cursor: pointer;
-      }
-
-      #carousel .dot.active {
-        width: 24px;
-        height: 4px;
-        border-radius: 2px;
-        border: 2px solid #28ff52;
-        background-color: #28ff52;
-        margin: 0 8px;
-        transition: width 0.25s ease;
-        cursor: pointer;
-      }
-    </style>
-  </head>
-  <body>
-    <div id="carousel" class="swiper-container">
-      <div class="swiper-wrapper">
-        <div class="swiper-slide">
-          <a href="/fotovoltaico">
-            <img src="1.webp" alt="Image 1" />
-          </a>
-          <div class="HeadingSlider__content">
-            <h2 class="mainHeadingSlider__title">Fotovoltaico</h2>
-            <p class="mainHeadingSlider__description">
-              Comercialização e instalação de sistema Fotovoltaico
-            </p>
-            <a href="/fotovoltaico" class="mainHeadingSlider__button"
-              >Saber mais</a
-            >
-          </div>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicial - OAK Charger</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Carrossel -->
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <img src="/imgs/1.webp" class="img-fluid" alt="Imagem 1">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Energia Solar EDP</h5>
+                    <p>Aproveite os dias mais longos para começar a produzir a sua própria energia</p>
+                    <p><strong>A partir de 24,90€/mês</strong></p>
+                    <a href="#saber-mais" class="btn btn-success">Saber mais</a>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <img src="/imgs/2.webp" class="img-fluid" alt="Imagem 2">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Energia Solar EDP</h5>
+                    <p>Aproveite os dias mais longos para começar a produzir a sua própria energia</p>
+                    <p><strong>A partir de 24,90€/mês</strong></p>
+                    <a href="#saber-mais" class="btn btn-success">Saber mais</a>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <img src="/imgs/3.webp" class="img-fluid" alt="Imagem 3">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Energia Solar EDP</h5>
+                    <p>Aproveite os dias mais longos para começar a produzir a sua própria energia</p>
+                    <p><strong>A partir de 24,90€/mês</strong></p>
+                    <a href="#saber-mais" class="btn btn-success">Saber mais</a>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <img src="/imgs/4.webp" class="img-fluid" alt="Imagem 4">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Energia Solar EDP</h5>
+                    <p>Aproveite os dias mais longos para começar a produzir a sua própria energia</p>
+                    <p><strong>A partir de 24,90€/mês</strong></p>
+                    <a href="#saber-mais" class="btn btn-success">Saber mais</a>
+                </div>
+            </div>
         </div>
-        <div class="swiper-slide">
-          <a href="/pagina-inicial">
-            <img src="2.webp" alt="Image 2" />
-          </a>
-          <div class="HeadingSlider__content">
-            <h2 class="mainHeadingSlider__title">Baterias</h2>
-            <p class="mainHeadingSlider__description">
-              Soluções em reparação e venda de baterias de lítio
-            </p>
-            <a href="/pagina-inicial" class="mainHeadingSlider__button"
-              >Saber mais</a
-            >
-          </div>
+        <div class="carousel-controls">
+            <div class="swiper-button-prev prev"></div>
+            <div class="swiper-pagination carousel-indicators"></div>
+            <div class="swiper-button-next next"></div>
         </div>
-        <div class="swiper-slide"> 
-          <a href="/safe-oakcharger" >
-            <img src="3.webp" alt="Image 3" />
-          </a>
-          <div class="HeadingSlider__content">
-            <h2 class="mainHeadingSlider__title">Safe OakCharger</h2>
-            <p class="mainHeadingSlider__description">
-              Segurança não é um luxo. Adira já seu plano e fique tranquilo
-              contra os imprevistos.
-            </p>
-            <a href="/safe-oakcharger" class="mainHeadingSlider__button"
-              >Saber mais</a
-            >
-          </div>
-        </div>
-        <div class="swiper-slide">
-          <a href="/loja" >
-            <img src="4.webp" alt="Image 4" />
-        </a>
-          <div class="HeadingSlider__content">
-            <h2 class="mainHeadingSlider__title">Loja</h2>
-            <p class="mainHeadingSlider__description">
-              A maior e melhor loja baterias de lítio de Portugal.
-            </p>
-            <a href="/loja" class="mainHeadingSlider__button">Saber mais</a>
-          </div>
-        </div>
-      </div>
-      <div class="carousel-controls">
-        <div class="carousel-control prev">&lt;</div>
-        <div class="carousel-indicators">
-          <div class="dot active"></div>
-          <div class="dot"></div>
-          <div class="dot"></div>
-          <div class="dot"></div>
-        </div>
-        <div class="carousel-control next">&gt;</div>
-      </div>
     </div>
+
+    <!-- Seção "Quem Somos" -->
+    <section class="about-us-section bg-light py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 mb-3">
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/your-video-id" allowfullscreen></iframe>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-3 d-flex flex-column justify-content-center">
+                    <h2>Quem somos</h2>
+                    <p>OAK Charger é uma empresa portuguesa focada em atender as novas necessidades de eficiência energética e as necessidades das indústrias. Temos em nosso quadro de colaboradores, engenheiros eletrotécnicos e mecânicos, além de profissionais altamente qualificados para perceber e solucionar problemas.</p>
+                    <a href="#contact" class="btn btn-dark mt-3 align-self-start">Entre em Contacto</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 col-12 mb-3">
+                    <h5>Morada</h5>
+                    <p>R. Almirante Gago Coutinho, 2C<br>
+                    6300-507 Guarda - Guarda- Portugal</p>
+                </div>
+                <div class="col-md-3 col-12 mb-3">
+                    <h5>Contatos</h5>
+                    <p>comercial@oakcharger.com<br>
+                    +351 910 649 520</p>
+                </div>
+                <div class="col-md-3 col-12 mb-3">
+                    <h5>Horários</h5>
+                    <p>Segunda à Sexta-feira<br>
+                    9h às 17h</p>
+                </div>
+                <div class="col-md-3 col-12 mb-3 d-flex align-items-center justify-content-center">
+                    <img src="/imgs/logo.avif" alt="Oak Charger Logo" class="img-fluid" style="max-width: 200px; max-height: 250px;">
+                </div>
+            </div>
+        </div>
+    </footer>
 
     <!-- Swiper JS -->
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <!-- Custom JS -->
     <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        const swiper = new Swiper(".swiper-container", {
-          loop: true,
-          pagination: {
-            el: ".carousel-indicators",
-            clickable: true,
-            renderBullet: function (index, className) {
-              return `<div class="${className} dot"></div>`;
-            },
-          },
-          navigation: {
-            nextEl: ".next",
-            prevEl: ".prev",
-          },
-          autoplay: {
-            delay: 3000,
-          },
+        document.addEventListener("DOMContentLoaded", function () {
+            const swiper = new Swiper(".swiper-container", {
+                loop: true,
+                pagination: {
+                    el: ".carousel-indicators",
+                    clickable: true,
+                    renderBullet: function (index, className) {
+                        return `<div class="${className} dot"></div>`;
+                    },
+                },
+                navigation: {
+                    nextEl: ".next",
+                    prevEl: ".prev",
+                },
+                autoplay: {
+                    delay: 3000,
+                },
+            });
+
+            const updateIndicators = () => {
+                document.querySelectorAll(".dot").forEach((dot, index) => {
+                    dot.classList.toggle("active", index === swiper.realIndex);
+                });
+            };
+
+            swiper.on("slideChange", updateIndicators);
+            updateIndicators();
         });
-
-        const updateIndicators = () => {
-          document.querySelectorAll(".dot").forEach((dot, index) => {
-            dot.classList.toggle("active", index === swiper.realIndex);
-          });
-        };
-
-        swiper.on("slideChange", updateIndicators);
-        updateIndicators();
-      });
     </script>
-  </body>
+</body>
 </html>
