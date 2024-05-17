@@ -2,6 +2,28 @@ body {
     font-family: Arial, sans-serif;
 }
 
+.navbar {
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.navbar-light {
+    background-color: transparent;
+}
+
+.navbar-scroll {
+    background-color: white !important;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.navbar-nav .nav-link {
+    color: green;
+}
+
+.navbar-nav .nav-link.active {
+    color: blue;
+    font-weight: bold;
+}
+
 footer h5 {
     font-weight: bold;
 }
@@ -27,49 +49,105 @@ footer p {
     text-transform: uppercase;
 }
 
-.carousel-controls {
-    position: absolute;
-    bottom: 10px;
-    right: 10px;
-    left: 10px;
+.carousel-inner {
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-    z-index: 15;
+    align-items: center; /* Vertically center items */
 }
 
-.swiper-button-prev, .swiper-button-next {
+.carousel-caption {
+    left: 15%;
+    right: auto;
+    text-align: left;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.swiper-container {
     position: relative;
-    z-index: 15;
+}
+
+.swiper-controls {
+    position: absolute;
+    bottom: 100px;
+    right: 10%;
     display: flex;
     align-items: center;
-    justify-content: center;
-    width: 40px;
-    height: 40px;
+    gap: 5px;
+    width: 200px
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+    display: inline-block;
+    cursor: pointer;
+    font-size: 45px;
     color: #fff;
-    text-align: center;
-    opacity: 0.5;
+    padding: 0;
+    margin: 0 1px;
+    transition: color 0.3s;
+}
+
+.swiper-button-prev:hover,
+.swiper-button-next:hover {
+    color: #28ff52;
 }
 
 .swiper-pagination {
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
+    top:34px !important;
 }
 
-.dot {
+.swiper-pagination .swiper-pagination-bullet {
     width: 10px;
     height: 10px;
-    margin: 0 5px;
-    background-color: rgba(0, 0, 0, 0.25);
-    border-radius: 50%;
-    transition: background-color 0.3s;
+    border: 3px solid #fff;
+    background-color: transparent;
+    border-radius: 100%;
+    opacity: 1;
+    margin: 0 8px;
+    transition: width 0.25s ease;
+    cursor: pointer;
 }
 
-.dot.active {
-    width: 24px;
-    height: 4px;
+.swiper-pagination .swiper-pagination-bullet-active {
+    width: 54px;
+    height: 8px;
     border-radius: 2px;
     background-color: #28ff52;
     border: 2px solid #28ff52;
+}
+
+.btn-saber-mais {
+    min-width: 168px;
+}
+
+.carousel-img {
+    object-fit: cover;
+    height: 100%;
+}
+
+/* Media queries for responsive design */
+@media (max-width: 768px) {
+    .carousel-inner {
+        height: 50vh; /* Adjust height for mobile */
+    }
+    .carousel-caption {
+        font-size: 14px;
+    }
+    .btn-saber-mais {
+        font-size: 12px;
+        padding: 8px 12px;
+    }
+}
+
+@media (max-width: 576px) {
+    .carousel-caption {
+        font-size: 12px;
+    }
+    .btn-saber-mais {
+        font-size: 10px;
+        padding: 6px 10px;
+    }
 }
