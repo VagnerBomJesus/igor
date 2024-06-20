@@ -1,151 +1,178 @@
 <!DOCTYPE html>
-<html lang="pt">
+<html>
 <head>
-    <meta charset="UTF-8">
+<meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inicial - OAK Charger</title>
-    <!-- Bootstrap CSS -->
+
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <!-- Swiper CSS -->
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
-    <link rel="stylesheet" href="css/styles.css">
     <!-- Font Awesome for icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<title>Page Title</title>
 </head>
 <body>
-    <!-- Navbar -->
-    <nav id="navbar" class="navbar navbar-expand-lg fixed-top navbar-light">
-        <div class="container">
-            <a class="navbar-brand" href="/">
-                <img src="./imgs/logo.avif" alt="OAK Charger Logo" style="height: 70px;">
-            </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link" href="/">Inicial</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="pages/contactos.html">Contactos</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-
-    <!-- Swiper -->
+    <style>
+        body {
+margin: 0 !important;
+            font-family: 'League Spartan', sans-serif !important;
+width: 100vw; height: 100vh; object-fit: cover; margin: 0;
+        }
+ .secao { margin: 0 !important;}
+        .carousel-inner {
+            display: flex !important;
+            align-items: center !important;
+        }
+        .carousel-caption {
+            left: 15% !important;
+            right: auto !important;
+            text-align: left !important;
+            top: 50% !important;
+            transform: translateY(-50%) !important;
+        }
+        .swiper-container {
+            position: relative !important;
+            width: 100vw; height: 100vh; object-fit: cover; margin: 0;
+        }
+        .swiper-controls {
+            position: absolute !important;
+            bottom: 100px !important;
+            right: 10% !important;
+            display: flex !important;
+            align-items: center !important;
+            gap: 5px !important;
+            width: 230px !important;
+            color: blue;
+            background: blue;
+        }
+        .swiper-button-prev, .swiper-button-next {
+            display: inline-block !important;
+            cursor: pointer !important;
+            font-size: 45px !important;
+            //top: 50% !important;
+            color: #fff !important;
+            margin-top: -47px !important;
+            transition: color 0.3s !important;
+            
+        }
+        .swiper-button-prev:hover,
+        .swiper-button-next:hover {
+            color: #0FBD64 !important;
+        }
+        .swiper-pagination {
+            display: flex !important;
+            align-items: center !important;
+            justify-content: center !important;
+            top: 34px !important !important;
+        }
+        .swiper-pagination .swiper-pagination-bullet {
+            width: 10px !important;
+            height: 10px !important;
+            border: 3px solid #fff !important;
+            background-color: transparent !important;
+            border-radius: 100% !important;
+            opacity: 1 !important;
+            margin: 0 8px !important;
+            transition: width 0.25s ease !important;
+            cursor: pointer !important;
+        }
+        .swiper-pagination .swiper-pagination-bullet-active {
+            width: 54px !important;
+            height: 8px !important;
+            border-radius: 2px !important;
+            background-color: #0FBD64 !important;
+            border: 2px solid #0FBD64 !important;
+        }
+        .btn-saber-mais {
+            min-width: 168px !important;
+        }
+        .carousel-img {
+            object-fit: cover !important;
+            height: 100% !important;
+        }
+        @media (max-width: 768px) {
+            .carousel-inner {
+                height: 50vh !important;
+            }
+            .carousel-caption {
+                font-size: 14px !important;
+            }
+            .btn-saber-mais {
+                font-size: 12px !important;
+                padding: 8px 12px !important;
+            }
+            .swiper-controls {
+                display: none !important;
+            }
+        }
+        @media (max-width: 576px) {
+            .carousel-caption {
+                font-size: 12px !important;
+            }
+            .btn-saber-mais {
+                font-size: 10px !important;
+                padding: 6px 10px !important;
+            }
+        }
+    </style>
     <div class="swiper-container">
         <div class="swiper-wrapper">
             <div class="swiper-slide">
-                <a href="/pages/fotovoltaico.html">
-                    <img src="./imgs/1.webp" class="d-block w-100 carousel-img" alt="Imagem fotovoltaico">
+                <a href="https://oakcharger.com/fotovoltaico" target="_parent">
+                    <img src="https://files.fm/thumb_show.php?i=s5kqn2v5vh" class="d-block w-100 carousel-img" alt="Imagem fotovoltaico">
                 </a>
                 <div class="carousel-caption d-none d-md-block">
-                    <h5>Fotovoltaico</h5>
-                    <p>Comercialização e instalação de sistema Fotovoltaico</p>
-                    <p><strong>A partir de 24,90€/mês</strong></p>
-                    <a href="/pages/fotovoltaico.html" class="btn btn-success btn-saber-mais">Saber mais</a>
+                    <h1>Painéis Fotovoltaicos</h1>
+                    <h5>Instalação de Painéis Fotovoltaicos e Manutenção.</h5>
+                    <!--<h5><strong>A partir de 24,90€/mês</strong></h5>-->
+                    <a href="https://oakcharger.com/fotovoltaico" class="btn btn-success btn-saber-mais" target="_parent">Saber mais</a>
                 </div>
             </div>
             <div class="swiper-slide">
-                <a href="/pages/bateria.html">
-                    <img src="./imgs/2.webp" class="d-block w-100 carousel-img" alt="Imagem lítio">
-
+                <a href="https://oakcharger.com/baterias" target="_parent">
+                    <img src="https://files.fm/thumb_show.php?i=j2kdtrt2bh" class="d-block w-100 carousel-img" alt="Imagem lítio">
                 </a>
                 <div class="carousel-caption d-none d-md-block">
+                    <h1>Baterias de Lítio</h1>
+                    <h5>Manutenção e Venda de Packs de baterias de lítio para seu veículo, residência ou trotinete.</h5>
+                    <a href="https://oakcharger.com/baterias" class="btn btn-success btn-saber-mais" target="_parent">Saber mais</a>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <a href="https://oakcharger.com/safe-oakcharger" target="_parent">
+                    <img src="https://files.fm/thumb_show.php?i=ze38888ts7" class="d-block w-100 carousel-img" alt="Imagem 3">
+                </a>
+                <div class="carousel-caption d-none d-md-block">
+                    <h1>Safe OakCharger</h1>
+                    <h5>Não conte com a sorte!</h5>
+                    <h5>A Oak Charger garante e certifica sua bateria de lítio para que não te preocupes mais.</h5>
+                    <a href="https://oakcharger.com/safe-oakcharger" class="btn btn-success btn-saber-mais" target="_parent">Saber mais</a>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <a href="https://oakcharger.com/loja" target="_parent">
+                    <img src="https://files.fm/thumb_show.php?i=y6pjmzqgac" class="d-block w-100 carousel-img" alt="Imagem Loja">
+                </a>
+                <div class="carousel-caption d-none d-md-block">
+                    <h1>Loja Online</h1>
+                    <h5>Painéis Solares</h5>
                     <h5>Baterias de lítio</h5>
-                    <p>Soluções em reparação e venda de baterias de lítio
-                    </p>
-                    <p><strong>A partir de 24,90€/mês</strong></p>
-                    <a href="/pages/bateria.html" class="btn btn-success btn-saber-mais">Saber mais</a>
-                </div>
-            </div>
-            <div class="swiper-slide">
-                <a href="/pages/safe-oakcharger.html">
-                    <img src="./imgs/3.webp" class="d-block w-100 carousel-img" alt="Imagem 3">
-                </a>
-                <div class="carousel-caption d-none d-md-block">
-                    <h5>Segurança não é um luxo</h5>
-                    <p>
-
-                        Adira já seu plano e fique tranquilo contra os imprevistos.</p>
-                    <p><strong>A partir de 24,90€/mês</strong></p>
-                    <a href="/pages/safe-oakcharger.html" class="btn btn-success btn-saber-mais">Saber mais</a>
-                </div>
-            </div>
-            <div class="swiper-slide">
-                <a href="/pages/loja.html">
-                    <img src="./imgs/4.webp" class="d-block w-100 carousel-img" alt="Imagem Loja">
-                </a>
-                <div class="carousel-caption d-none d-md-block">
-                    <h5>Energia Solar EDP</h5>
-                    <p>maior e melhor loja baterias de lítio de Portugal</p>
-                    <p><strong>A partir de 24,90€/mês</strong></p>
-                    <a href="/pages/loja.html" class="btn btn-success btn-saber-mais">Saber mais</a>
+                    <h5>Materiais elétricos para sua casa</h5>
+                    <a href="https://oakcharger.com/loja" class="btn btn-success btn-saber-mais" target="_parent">Saber mais</a>
                 </div>
             </div>
         </div>
-        <!-- Add Pagination and Navigation -->
         <div class="swiper-controls">
             <div class="swiper-button-prev"></div>
             <div class="swiper-pagination"></div>
             <div class="swiper-button-next"></div>
         </div>
     </div>
-
-    <!-- Seção "Quem Somos" -->
-    <section class="about-us-section bg-light py-5">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6 mb-3">
-                    <div class="embed-responsive embed-responsive-16by9">
-                        <iframe class="embed-responsive-item" width="486" height="273" src="https://www.youtube.com/embed/bVKfEsIq-BM?list=TLGGEj_DQ574YowxNjA1MjAyNA" title="OAK Charger - Apresentação" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                    </div>
-                </div>
-                <div class="col-md-6 mb-3 d-flex flex-column justify-content-center">
-                    <h2>Quem somos</h2>
-                    <p>OAK Charger é uma empresa portuguesa focada em atender as novas necessidades de eficiência energética e as necessidades das indústrias. Temos em nosso quadro de colaboradores, engenheiros eletrotécnicos e mecânicos, além de profissionais altamente qualificados para perceber e solucionar problemas.</p>
-                    <a href="#contact" class="btn btn-dark mt-3 align-self-start">Entre em Contacto</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="bg-dark text-white py-4">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-3 col-12 mb-3">
-                    <h5>Morada</h5>
-                    <p>R. Almirante Gago Coutinho, 2C<br>
-                    6300-507 Guarda - Guarda- Portugal</p>
-                </div>
-                <div class="col-md-3 col-12 mb-3">
-                    <h5>Contatos</h5>
-                    <p>comercial@oakcharger.com<br>
-                    +351 910 649 520</p>
-                </div>
-                <div class="col-md-3 col-12 mb-3">
-                    <h5>Horários</h5>
-                    <p>Segunda à Sexta-feira<br>
-                    9h às 17h</p>
-                </div>
-                <div class="col-md-3 col-12 mb-3 d-flex align-items-center justify-content-center">
-                    <img src="./imgs/logo.avif" alt="Oak Charger Logo" class="img-fluid" style="max-width: 200px; max-height: 250px;">
-                </div>
-            </div>
-        </div>
-    </footer>
-
-    <!-- jQuery, Bootstrap JS, Swiper JS and dependencies -->
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script>
-        // JavaScript para alternar a classe da navbar ao rolar a página
         window.onscroll = function() {
             var navbar = document.getElementById("navbar");
             if (window.scrollY > 50) {
@@ -155,7 +182,6 @@
             }
         };
 
-        // JavaScript para inicializar o Swiper
         var swiper = new Swiper('.swiper-container', {
             loop: true,
             pagination: {
@@ -171,5 +197,6 @@
             },
         });
     </script>
+
 </body>
 </html>
